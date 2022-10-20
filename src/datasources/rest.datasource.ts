@@ -18,7 +18,6 @@ const config = {
           "phoneNumber": "{phoneNumber}",
           "customerId": "{customerId}",
         },
-        "responsePath": "$"
       },
       functions: {
         "createUser": ["firstName", "middleName", "lastName", "email",
@@ -39,7 +38,6 @@ const config = {
           "phoneNumber": "{phoneNumber}",
           "customerId": "{customerId}",
         },
-        "responsePath": "$"
       },
       functions: {
         "updateUserById": ["id", "firstName", "middleName", "lastName", "email",
@@ -50,7 +48,6 @@ const config = {
       template: {
         "method": "GET",
         "url": "http://localhost:8000/users/{id}",
-        "responsePath": "$"
       },
       functions: {
         "getUserById": ["id"]
@@ -60,7 +57,6 @@ const config = {
       template: {
         "method": "GET",
         "url": "http://localhost:8000/users",
-        "responsePath": "$"
       },
       functions: {
         "getUsers": []
@@ -70,7 +66,6 @@ const config = {
       template: {
         "method": "DELETE",
         "url": "http://localhost:8000/users/{id}",
-        "responsePath": "$"
       },
       functions: {
         "deleteUserById": ["id"]
@@ -80,7 +75,6 @@ const config = {
       template: {
         "method": "GET",
         "url": "http://localhost:8000/users/count",
-        "responsePath": "$"
       },
       functions: {
         "getUsersCount": []
